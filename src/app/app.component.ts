@@ -23,7 +23,7 @@ export class AppComponent implements OnDestroy {
       },
     },
     {
-      key: 'formly-tabs',
+      key: 'formlyTabs', // if I comment the key, form (form.get('sport')) below become undefined
       type: 'card',
       fieldGroup: [
         {
