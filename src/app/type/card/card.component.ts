@@ -8,6 +8,6 @@ import {FieldType} from "@ngx-formly/core";
 })
 export class CardComponent extends FieldType implements OnInit {
   ngOnInit(): void {
-    console.log('this', this);
+    //console.log('this', this);
   }
 }
