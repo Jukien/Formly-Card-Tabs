@@ -1,0 +1,10 @@
+<app-card-tabs>
+  <app-card-tab *ngFor="let field of field.fieldGroup; let i = index;" [tabTitle]="field.templateOptions.label">
+    <formly-group
+      [model]="model[i]"
+      [field]="field"
+      [options]="options"
+      [form]="formControl">
+    </formly-group>
+  </app-card-tab>
+</app-card-tabs>
