@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CardTabsComponent } from './card-tabs.component';
+import {CardTabsComponent} from './card-tabs.component';
 
 describe('CardTabsComponent', () => {
   let component: CardTabsComponent;

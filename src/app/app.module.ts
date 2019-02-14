@@ -5,17 +5,21 @@ import {AppComponent} from './app.component';
 import {FormlyModule} from "@ngx-formly/core";
 import {ReactiveFormsModule} from "@angular/forms";
 import {FormlyBootstrapModule} from '@ngx-formly/bootstrap';
-import {CardComponent} from "./type/card/card.component";
-import {CardTabComponent} from "./type/card-tab/card-tab.component";
-import {CardTabsComponent} from "./type/card-tabs/card-tabs.component";
 import {AppRoutingModule} from "./app-routing.module";
+import {FormlyUsingCardAsTypeComponent} from './formly-using-card-as-type/formly-using-card-as-type.component';
+import {CardTabsComponent} from "./shared/ui/card-tabs/card-tabs.component";
+import {CardTabComponent} from "./shared/ui/card-tab/card-tab.component";
+import {CardComponent} from "./shared/formly/type/card/card.component";
+import {FormlyUsingCardComponent} from './formly-using-card/formly-using-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     CardTabComponent,
-    CardTabsComponent
+    CardTabsComponent,
+    FormlyUsingCardAsTypeComponent,
+    FormlyUsingCardComponent
   ],
   imports: [
     BrowserModule,

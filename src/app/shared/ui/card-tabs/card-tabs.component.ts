@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, ContentChildren, OnInit, QueryList} from '@angular/core';
+import {AfterContentInit, Component, ContentChildren, Input, OnInit, QueryList} from '@angular/core';
 import {CardTabComponent} from "../card-tab/card-tab.component";
 
 @Component({
@@ -8,6 +8,7 @@ import {CardTabComponent} from "../card-tab/card-tab.component";
 })
 export class CardTabsComponent implements OnInit, AfterContentInit {
   @ContentChildren(CardTabComponent) tabs: QueryList<CardTabComponent>;
+  @Input('className') className: string;
 
   ngOnInit(): void {
 

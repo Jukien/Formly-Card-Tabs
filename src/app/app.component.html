@@ -1,9 +1,22 @@
-<div class="container">
-  <form [formGroup]="form" (ngSubmit)="submit(model)">
-    <formly-form [form]="form" [fields]="fields" [model]="model">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </formly-form>
-  </form>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <a class="navbar-brand" href="#">
+    Formly sandbox</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/formly-using-card">Form with several formly-form</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/formly-using-card-as-type">Form with one formly-form</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-  <!--<pre>{{model | json}}</pre>-->
+<div class="container">
+  <router-outlet></router-outlet>
 </div>
