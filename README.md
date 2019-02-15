@@ -1,6 +1,6 @@
 # Formly sandbox
 
-[Demo on Stackblitz](https://stackblitz.com/github/Jukien/Formly-Sandbox)
+<a href="https://stackblitz.com/github/Jukien/Formly-Sandbox" target="_blank">Demo on Stackblitz</a>
 
 ## With multiple formly-form
 To facilitate the positionning of fields we can use multiple formly-form (works only with **Formly 5.x**):
