@@ -1,9 +1,9 @@
 <div class="alert alert-info" role="alert">
   <h4 class="alert-heading">Form with multiple formly-form</h4>
-  <p>My goal is to place fields where I want without creating formly custom type.<br/>
-    I don't want to mix design and formly type.</p>
+  <p>Allow to place fields where we want without creating formly custom type.<br/>
+    Doesn't mix design and formly type.</p>
   <hr>
-  <p class="mb-0">This doesn't work if you apply a model. The model is mixed up...</p>
+  <p class="mb-0">This works only with <strong>Formly 5.x</strong>. With 4.x, the model is mixed up...</p>
 </div>
 
 <form [formGroup]="form" (ngSubmit)="submit(model)">

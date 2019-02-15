@@ -1,20 +1,20 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {FormlyUsingCardComponent} from './formly-using-card.component';
+import {FormlyFieldsLayoutComponent} from './formly-fields-layout.component';
 
-describe('FormlyUsingCardComponent', () => {
-  let component: FormlyUsingCardComponent;
-  let fixture: ComponentFixture<FormlyUsingCardComponent>;
+describe('FormlyFieldsLayoutComponent', () => {
+  let component: FormlyFieldsLayoutComponent;
+  let fixture: ComponentFixture<FormlyFieldsLayoutComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [FormlyUsingCardComponent]
+      declarations: [FormlyFieldsLayoutComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormlyUsingCardComponent);
+    fixture = TestBed.createComponent(FormlyFieldsLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

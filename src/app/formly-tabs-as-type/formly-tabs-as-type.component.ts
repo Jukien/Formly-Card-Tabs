@@ -5,11 +5,11 @@ import {FormlyFieldConfig} from '@ngx-formly/core';
 import {startWith, takeUntil, tap} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-formly-using-card-as-type',
-  templateUrl: './formly-using-card-as-type.component.html',
-  styleUrls: ['./formly-using-card-as-type.component.scss']
+  selector: 'app-formly-tabs-as-type',
+  templateUrl: './formly-tabs-as-type.component.html',
+  styleUrls: ['./formly-tabs-as-type.component.scss']
 })
-export class FormlyUsingCardAsTypeComponent implements OnDestroy {
+export class FormlyTabsAsTypeComponent implements OnDestroy {
   onDestroy$ = new Subject<void>();
   form = new FormGroup({});
   model: any = {
@@ -67,8 +67,9 @@ export class FormlyUsingCardAsTypeComponent implements OnDestroy {
                 valueProp: 'id',
                 labelProp: 'name',
               },
-              lifecycle: {
-                onInit: (form, field) => {
+              hooks: {
+                onInit: (field) => {
+                  const {form, model, options} = field;
                   const teams = [
                     {id: '1', name: 'Bayern Munich', sportId: '1'},
                     {id: '2', name: 'Real Madrid', sportId: '1'},
@@ -96,8 +97,9 @@ export class FormlyUsingCardAsTypeComponent implements OnDestroy {
                 valueProp: 'id',
                 labelProp: 'name',
               },
-              lifecycle: {
-                onInit: (form, field) => {
+              hooks: {
+                onInit: (field) => {
+                  const {form, model, options} = field;
                   const players = [
                     {id: '1', name: 'Bayern Munich (Player 1)', teamId: '1'},
                     {id: '2', name: 'Bayern Munich (Player 2)', teamId: '1'},
